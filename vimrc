@@ -3,12 +3,13 @@ syntax on
 set autoindent
 set confirm
 set tabstop=4
+set expandtab
 set softtabstop=4
 set shiftwidth=4
 set noexpandtab
 set number
 set encoding=utf-8
-colorscheme darkblue 
+colorscheme darkblue
 set helplang=cn
 set guifont=Menlo:h16:cANSI
 
@@ -24,9 +25,16 @@ nnoremap <leader>wq :wq<CR>
 
 nnoremap <leader>ev :vsplit $MYVIMRC<CR>
 nnoremap <leader>sv :source $MYVIMRC<CR>
+nnoremap <C-W> :q<CR>
+nnoremap <C-S> :w<CR>
+inoremap <ESC>:w<CR>
+nnoremap <C-Q> :qall<CR>
+nnoremap <leader>v :vsplit<CR>
 
 nnoremap <leader>" viw<esc>a"<esc>hbi"<ESC>lw
 nnoremap <leader>' viw<ESC>a'<ESC>hbi'<ESC>lw
+
+autocmd BufWrite * :retab<CR>
 
 let @a=":call Debug()\<CR>"
 

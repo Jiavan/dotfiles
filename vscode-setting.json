@@ -1,0 +1,33 @@
+/*  */// 将设置放入此文件中以覆盖默认设置
+{
+    "workbench.iconTheme": "material-icon-theme",
+    "window.zoomLevel": 0,
+    "editor.fontSize": 16,
+    "editor.lineHeight": 0,
+    "typescript.check.npmIsInstalled": false,
+    "editor.renderIndentGuides": false,
+    "vim.disableAnnoyingNeovimMessage": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "vsicons.dontShowNewVersionMessage": true,
+    "python.disablePromptForFeatures": [
+        "pylint"
+    ],
+    "[python]":/*  */ {},
+    "workbench.colorTheme": "Solarized Dark",
+    "files.autoSave": "onWindowChange",
+    "vim.hlsearch": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [ "<C-w>" ],
+            "commands": [ ":q" ]
+        }, {
+            "before": [ "<C-s>" ],
+            "commands": [ ":w" ]
+        }, {
+            "before": [ "backspace" ],
+            "commands": [ ":nohl" ]
+        }
+    ],
+    "vim.useSystemClipboard": true,
+    "editor.tabSize": 4,
+}
